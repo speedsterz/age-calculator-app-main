@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <form action="" class="form">
+        <div class="input-div">
+          <label for="__Day">Day</label
+          ><input type="text" name="__Day" id="__Day" placeholder="DD" />
+          <small id="sm-day"></small>
+        </div>
+        <div class="input-div">
+          <label for="__Month">Month</label
+          ><input type="text" name="__Month" id="__Month" placeholder="MM" />
+          <small id="sm-month"></small>
+        </div>
+        <div class="input-div">
+          <label for="__Year">Year</label
+          ><input type="text" name="__Year" id="__Year" placeholder="YYYY" />
+          <small id="sm-year"></small>
+        </div>
+      </form>
+      <div class="line">
+        <button class="btn">
+          <img src="./assets/images/icon-arrow.svg" alt="" srcset="" />
+        </button>
+      </div>
+      <h1><span class="number-date" id="year">--</span> years</h1>
+
+      <h1><span class="number-date" id="month">--</span> months</h1>
+
+      <h1><span class="number-date" id="day">--</span> days</h1>
+      <script src="index.js"></script>
+    </main>
+  </body>
+</html>

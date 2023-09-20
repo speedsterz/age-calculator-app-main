@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+:root {
+  --clr-purple: hsl(259, 100%, 65%);
+  --clr-light-red: hsl(0, 100%, 67%);
+  --clr-off-white: hsl(0, 0%, 94%);
+  --clr-light-grey: hsl(0, 0%, 86%);
+  --clr-smokey-grey: hsl(0, 1%, 44%);
+  --clr-off-black: hsl(0, 0%, 8%);
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-off-white);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1rem 1rem 6rem 1rem;
+  color: var(--clr-smokey-grey);
+  width: min(90%, 700px);
+}
+h1 {
+  font-size: 3.5rem;
+  color: black;
+  line-height: 1;
+  font-weight: 800;
+  font-style: italic;
+}
+input {
+  width: 6rem;
+  height: 3rem;
+  text-align: center;
+  border: 1px solid var(--clr-light-grey);
+  border-radius: 0.3rem;
+}
+input:focus {
+  outline: none;
+  border: 1px solid var(--clr-purple);
+}
+
+label {
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+.input-div {
+  display: flex;
+  flex-direction: column;
+}
+.number-date {
+  color: var(--clr-purple);
+}
+.line {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  height: 2px;
+  width: 100%;
+  background-color: var(--clr-light-grey);
+  position: relative;
+}
+.btn {
+  background-color: var(--clr-purple);
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  width: 70px;
+  position: absolute;
+  top: -25px;
+  left: 40%;
+}
+.btn:hover {
+  background-color: black;
+}
+
+.input-div small {
+  color: var(--clr-light-red);
+  font-size: 0.7rem;
+}
+
+@media (min-width: 800px) {
+  .btn {
+    left: 90%;
+  }
+}
